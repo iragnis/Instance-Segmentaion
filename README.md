@@ -7,7 +7,7 @@
 ```
 ### Usage 
 ```
-python test.py /content/Carspotters.jpg
+python test.py Carspotters.jpg
 ```
 
 ### Inference results
