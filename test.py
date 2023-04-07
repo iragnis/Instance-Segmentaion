@@ -17,8 +17,17 @@ to download an input image
 response = requests.get('http://images.cocodataset.org/val2017/000000439715.jpg')
 open("input.jpg", "wb").write(response.content)
 '''
+import argparse
 
-im = cv2.imread("Carspotters.jpg")
+parser = argparse.ArgumentParser(description='Run object detection on an input image')
+parser.add_argument('input_file', type=str, help='path to input image file')
+
+args = parser.parse_args()
+
+input_file_path = args.input_file
+
+im = cv2.imread(input_file_path)
+#im = cv2.imread("Carspotters.jpg")
 #fig, ax = plt.subplots(figsize=(18, 8))
 #ax.imshow(cv2.cvtColor(im, cv2.COLOR_BGR2RGB))
 
