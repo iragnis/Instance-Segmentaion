@@ -5,6 +5,10 @@
 * pip install pyyaml==5.1
 * pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
+### Usage 
+```
+python test.py /content/Carspotters.jpg
+```
 
 ### Inference results
 ![Carspotters](https://user-images.githubusercontent.com/97392797/225952553-8a31c54e-cc20-4e8e-8253-f9e78c531778.jpg)
